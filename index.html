@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SightHall — Your dashboards, one wall of glass</title>
+<meta name="description" content="SightHall is a Windows dashboard wall: arrange live web dashboards, reports and documents in resizable grids on one screen — no tab juggling.">
+<style>
+  :root{
+    --bg:#0d1117; --bg2:#141b24; --card:#1a2230; --line:#243044;
+    --text:#dbe4ee; --dim:#8b98a9; --accent:#3d8bfd; --accent2:#63b3ff;
+  }
+  *{margin:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font:16px/1.6 "Segoe UI",system-ui,sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  header{padding:18px 0;border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between}
+  .logo{font-size:20px;font-weight:700;letter-spacing:.3px}
+  .logo span{color:var(--accent2)}
+  nav a{color:var(--dim);text-decoration:none;margin-left:22px;font-size:14px}
+  nav a:hover{color:var(--text)}
+  .hero{padding:72px 0 56px;text-align:center}
+  .hero h1{font-size:clamp(28px,5vw,44px);line-height:1.2;font-weight:700}
+  .hero h1 em{font-style:normal;color:var(--accent2)}
+  .hero p{margin:18px auto 0;max-width:620px;color:var(--dim);font-size:18px}
+  .cta{margin-top:34px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+       padding:13px 30px;border-radius:8px;font-weight:600;font-size:16px}
+  .btn:hover{background:var(--accent2)}
+  .note{margin-top:12px;font-size:13px;color:var(--dim)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;padding:26px 0 60px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+  .card h3{font-size:16px;margin-bottom:8px}
+  .card p{font-size:14px;color:var(--dim)}
+  .strip{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:38px 0}
+  .strip .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;text-align:center}
+  .strip b{display:block;font-size:15px;margin-bottom:4px}
+  .strip span{font-size:13px;color:var(--dim)}
+  footer{padding:34px 0;text-align:center;color:var(--dim);font-size:13px}
+  footer a{color:var(--dim)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Sight<span>Hall</span></div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="mailto:contact@sighthall.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Your dashboards.<br>One <em>wall of glass</em>.</h1>
+    <p>SightHall turns a Windows PC into a live dashboard wall: arrange web dashboards,
+       reports and documents in resizable grids on one screen — always on, always in view,
+       no tab juggling.</p>
+    <div class="cta" id="download">
+      <a class="btn" href="mailto:contact@sighthall.com?subject=SightHall%20download">Request the installer</a>
+      <div class="note">Public download coming with v3.0 — early access by request.</div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <div><b>Installs in a minute</b><span>Per-user setup, no admin rights needed</span></div>
+    <div><b>Your data stays yours</b><span>Everything is stored locally — no cloud, no telemetry</span></div>
+    <div><b>Windows 10 &amp; 11</b><span>Validated on clean images of both</span></div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="grid">
+      <div class="card"><h3>🧱 Live grid walls</h3>
+        <p>Split any screen into grids and load a live web page, BI dashboard, PDF or Office document into each one. Lock grids to protect their content.</p></div>
+      <div class="card"><h3>📌 Split view</h3>
+        <p>Pin the page that matters into a large pane and keep the rest of the wall at a glance beside it.</p></div>
+      <div class="card"><h3>📑 Bulk loading</h3>
+        <p>Fill a whole row from a CSV link list or a folder of documents in one action — built for control rooms and morning reviews.</p></div>
+      <div class="card"><h3>🗂 Multiple walls</h3>
+        <p>Several dashboards per workspace, one click apart. Layouts, zoom levels and content survive restarts.</p></div>
+      <div class="card"><h3>🏢 IT friendly</h3>
+        <p>Per-user install, silent deployment via Intune/GPO, system proxy support, folder-access policy and a one-click diagnostics bundle.</p></div>
+      <div class="card"><h3>🔄 Manual updates</h3>
+        <p>The app tells you when a new version exists — you decide when to install it. Nothing updates itself behind your back.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 SightHall · <a href="mailto:contact@sighthall.com">contact@sighthall.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
