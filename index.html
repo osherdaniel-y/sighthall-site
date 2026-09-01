@@ -28,6 +28,9 @@
   @keyframes slide{0%{transform:translateX(-110%)}55%{transform:translateX(320%)}100%{transform:translateX(320%)}}
   @media (prefers-reduced-motion: reduce){.bar i{animation:none;width:60%}}
   footer{padding:22px 0;text-align:center;color:var(--dim);font-size:13px;border-top:1px solid var(--line)}
+  footer a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
+  footer a:hover{color:var(--accent2);border-bottom-color:var(--accent2)}
+  footer .sep{margin:0 8px;opacity:.5}
 </style>
 </head>
 <body>
@@ -46,7 +49,7 @@
 </main>
 
 <footer>
-  <div class="wrap">© 2026 SightHall</div>
+  <div class="wrap">© 2026 SightHall<span class="sep">·</span><a href="mailto:support@sighthall.com">support@sighthall.com</a></div>
 </footer>
 
 </body>
